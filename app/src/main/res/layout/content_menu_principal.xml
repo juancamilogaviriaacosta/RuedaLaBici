@@ -13,12 +13,6 @@
     tools:context="rueda.bici.MenuPrincipal"
     tools:showIn="@layout/app_bar_menu_principal">
 
-<android.support.v7.widget.Toolbar
-    android:id="@+id/toolbar"
-    android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
-    android:background="@android:color/transparent"
-    app:popupTheme="@style/AppTheme.PopupOverlay" />
 
 <TableLayout
     android:layout_width="match_parent"
@@ -48,18 +42,20 @@
     <TableRow
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1" >
+        android:layout_weight="1"
+        android:padding="10dp">
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="sassaas"
+            android:text="Mi perfil"
             android:id="@+id/btn_go_to_campaign"
             android:drawableTop="@drawable/ic_menu_camera"
             android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
             android:paddingTop="10sp"
-            android:drawablePadding="-35sp"/>
+            android:drawablePadding="-20sp"/>
 
         <Button
             android:layout_width="0dp"
@@ -69,50 +65,39 @@
             android:id="@+id/boton_explorar_rodadas"
             android:drawableTop="@drawable/ic_menu_camera"
             android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
             android:paddingTop="10sp"
-            android:drawablePadding="-35sp"/>
+            android:drawablePadding="-20sp"/>
     </TableRow>
     <TableRow
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1" >
+        android:layout_weight="1"
+        android:padding="10dp">
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="asdfsdf"
+            android:text="Explorar rutas"
             android:id="@+id/boton_novedades"
             android:drawableTop="@drawable/ic_menu_camera"
             android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
             android:paddingTop="10sp"
-            android:drawablePadding="-40sp"/>
+            android:drawablePadding="-20sp"/>
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="fhjghk"
+            android:text="Asistencia en ruta"
             android:id="@+id/principalBotonServicioTecnico"
             android:drawableTop="@drawable/ic_menu_camera"
             android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
             android:paddingTop="10sp"
-            android:drawablePadding="-35sp"/>
-    </TableRow>
-    <TableRow
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="sdfgdfhgd"
-            android:id="@+id/principalBotonContactenos"
-            android:drawableTop="@drawable/ic_menu_camera"
-            android:textColor="@android:color/white"
-            android:drawablePadding="-40sp"/>
+            android:drawablePadding="-20sp"/>
     </TableRow>
 </TableLayout>
 </RelativeLayout>
