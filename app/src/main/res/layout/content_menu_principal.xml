@@ -39,7 +39,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="100dp"
             android:id="@+id/imageView2"
             android:src="@drawable/ic_menu_camera"
             android:layout_span="2"/>
@@ -65,8 +65,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="sadsdas"
-            android:id="@+id/boton_pedidos"
+            android:text="Explorar rodadas"
+            android:id="@+id/boton_explorar_rodadas"
             android:drawableTop="@drawable/ic_menu_camera"
             android:textColor="@android:color/white"
             android:paddingTop="10sp"
@@ -102,7 +102,7 @@
     <TableRow
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1" >
+        android:layout_weight="1">
 
         <Button
             android:layout_width="0dp"
@@ -110,7 +110,7 @@
             android:layout_weight="1"
             android:text="sdfgdfhgd"
             android:id="@+id/principalBotonContactenos"
-            android:background="@drawable/ic_menu_camera"
+            android:drawableTop="@drawable/ic_menu_camera"
             android:textColor="@android:color/white"
             android:drawablePadding="-40sp"/>
     </TableRow>
