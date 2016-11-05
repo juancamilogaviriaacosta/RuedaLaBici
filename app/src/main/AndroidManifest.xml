@@ -21,6 +21,18 @@
         <activity
             android:name=".ExplorarRodadasActivity"
             android:label="@string/title_activity_explorar_rodadas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MiPerfilActivity"
+            android:label="@string/title_activity_mi_perfil"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExplorarRutaActivity"
+            android:label="@string/title_activity_explorar_ruta"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AsistenciaRutaActivity"
+            android:label="@string/title_activity_asistencia_ruta"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

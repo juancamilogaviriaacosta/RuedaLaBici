@@ -6,4 +6,7 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_explorar_rodadas">ExplorarRodadasActivity</string>
+    <string name="title_activity_mi_perfil">MiPerfilActivity</string>
+    <string name="title_activity_explorar_ruta">ExplorarRutaActivity</string>
+    <string name="title_activity_asistencia_ruta">AsistenciaRutaActivity</string>
 </resources>
