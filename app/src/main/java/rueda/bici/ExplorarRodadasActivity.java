@@ -12,6 +12,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import rueda.bici.modelos.Rodada;
 
 public class ExplorarRodadasActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -31,6 +38,14 @@ public class ExplorarRodadasActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        List<Rodada> rodadas = new ArrayList<>();
+        for (int i=0; i<6; i++) {
+            rodadas.add(new Rodada(i, "Rodada: "+i, "Lugar: "+i, new Date()));
+        }
+        ListView listaRodadas = (ListView) findViewById(R.id.listaRodadas);
+        ListaRodadasAdapter listaRodadasAdapter = new ListaRodadasAdapter(this, rodadas);
+        listaRodadas.setAdapter(listaRodadasAdapter);
     }
 
     @Override

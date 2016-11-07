@@ -13,4 +13,11 @@
     tools:context="rueda.bici.ExplorarRodadasActivity"
     tools:showIn="@layout/app_bar_explorar_rodadas">
 
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listaRodadas"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"/>
+
 </RelativeLayout>
