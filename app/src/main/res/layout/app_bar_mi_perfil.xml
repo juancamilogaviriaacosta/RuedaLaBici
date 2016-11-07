@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="rueda.bici.MiPerfilActivity">
+    tools:context="rueda.bici.MiPerfilActivity"
+    android:background="@drawable/fondo2">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
