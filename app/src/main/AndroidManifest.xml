@@ -33,6 +33,10 @@
         <activity
             android:name=".AsistenciaRutaActivity"
             android:label="@string/title_activity_asistencia_ruta"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetalleRodadaActivity"
+            android:label="@string/title_activity_detalle_rodada"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

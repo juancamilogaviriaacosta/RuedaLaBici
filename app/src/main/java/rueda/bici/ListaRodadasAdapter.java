@@ -2,6 +2,7 @@ package rueda.bici;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -66,6 +67,15 @@ public class ListaRodadasAdapter extends BaseAdapter {
         holder.nombre.setText(temp.getNombre());
         holder.lugar.setText(temp.getLugar());
         holder.fecha.setText(new SimpleDateFormat("yyyy-MM-dd").format(temp.getFecha()));
+
+        row.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(actividad, DetalleRodadaActivity.class);
+                intent.putExtra("rodadaSeleccionada", temp.getId());
+                actividad.startActivity(intent);
+            }
+        });
         return row;
     }
 
