@@ -29,9 +29,17 @@
                 android:id="@+id/imagenDetalleRodada" />
 
             <LinearLayout
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nombreDetalleRodada"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:text="TextView"
@@ -39,31 +47,26 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/fechaDetalleRodada" />
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:text="TextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/nombreDetalleRodada" />
-
-                    <TextView
-                        android:text="TextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/organizadorDetalleRodada" />
-
-                </LinearLayout>
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/organizadorDetalleRodada" />
             </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="fill_parent"
+                android:layout_height="15dp" />
 
             <TextView
                 android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/descripcionDetalleRodada" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="fill_parent"
+                android:layout_height="15dp" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -74,7 +77,8 @@
                     android:text="Duracion: "
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/lable1" />
+                    android:id="@+id/lable1"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:text="TextView"
@@ -92,7 +96,8 @@
                     android:text="Punto de encuentro: "
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/lable2" />
+                    android:id="@+id/lable2"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:text="TextView"
@@ -110,7 +115,8 @@
                     android:text="Destino: "
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/lable3" />
+                    android:id="@+id/lable3"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:text="TextView"
@@ -119,17 +125,29 @@
                     android:id="@+id/destinoDetalleRodada" />
             </LinearLayout>
 
+            <android.support.v4.widget.Space
+                android:layout_width="fill_parent"
+                android:layout_height="15dp" />
+
             <Button
                 android:text="Contactar al organizador"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/contactarOrganizador" />
+                android:id="@+id/contactarOrganizador"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorLetra"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="fill_parent"
+                android:layout_height="15dp" />
 
             <Button
                 android:text="Invitar a un amigo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/invitarAmigo" />
+                android:id="@+id/invitarAmigo"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorLetra"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

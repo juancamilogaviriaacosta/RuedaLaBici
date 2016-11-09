@@ -42,7 +42,7 @@ public class DetalleRodadaActivity extends AppCompatActivity {
         Button contactarOrganizador = (Button) findViewById(R.id.contactarOrganizador);
         Button invitarAmigo = (Button) findViewById(R.id.invitarAmigo);
 
-        imagenDetalleRodada = rodadaSeleccionada.getImagen();
+        imagenDetalleRodada.setImageResource(rodadaSeleccionada.getImagen());
         fechaDetalleRodada.setText(new SimpleDateFormat("yyyy-MM-dd").format(rodadaSeleccionada.getFecha()));
         nombreDetalleRodada.setText(rodadaSeleccionada.getNombre());
         organizadorDetalleRodada.setText(rodadaSeleccionada.getOrganizador());

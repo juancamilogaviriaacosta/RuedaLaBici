@@ -1,7 +1,5 @@
 package rueda.bici.modelos;
 
-import android.widget.ImageView;
-
 import java.io.Serializable;
 import java.util.Date;
 
@@ -11,7 +9,7 @@ import java.util.Date;
 
 public class Rodada implements Serializable{
     private Integer id;
-    private ImageView imagen;
+    private int imagen;
     private String nombre;
     private String organizador;
     private Date fecha;
@@ -22,7 +20,7 @@ public class Rodada implements Serializable{
     private String puntoEncuentro;
     private String destino;
 
-    public Rodada(Integer id, ImageView imagen, String nombre, String organizador, Date fecha, String asistentes, String likes, String descripcion, String duracion, String puntoEncuentro, String destino) {
+    public Rodada(Integer id, int imagen, String nombre, String organizador, Date fecha, String asistentes, String likes, String descripcion, String duracion, String puntoEncuentro, String destino) {
         this.id = id;
         this.imagen = imagen;
         this.nombre = nombre;
@@ -44,11 +42,11 @@ public class Rodada implements Serializable{
         this.id = id;
     }
 
-    public ImageView getImagen() {
+    public int getImagen() {
         return imagen;
     }
 
-    public void setImagen(ImageView imagen) {
+    public void setImagen(int imagen) {
         this.imagen = imagen;
     }
 
