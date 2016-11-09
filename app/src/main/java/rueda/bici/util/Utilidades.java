@@ -1,11 +1,22 @@
 package rueda.bici.util;
 
-import android.widget.ImageView;
-
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.view.MenuItem;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import rueda.bici.AsistenciaRutaActivity;
+import rueda.bici.ExplorarRodadasActivity;
+import rueda.bici.ExplorarRutaActivity;
+import rueda.bici.MenuPrincipal;
+import rueda.bici.MiPerfilActivity;
+import rueda.bici.R;
 import rueda.bici.modelos.Rodada;
 
 /**
@@ -32,6 +43,30 @@ public class Utilidades {
             instance = new Utilidades();
         }
         return instance;
+    }
+
+    public boolean onNavigationItemSelected(Activity actividad, MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.nav_menu) {
+            Intent intent = new Intent(actividad, MenuPrincipal.class);
+            actividad.startActivity(intent);
+        } else if (id == R.id.nav_perfil) {
+            Intent intent = new Intent(actividad, MiPerfilActivity.class);
+            actividad.startActivity(intent);
+        } else if (id == R.id.nav_rodadas) {
+            Intent intent = new Intent(actividad, ExplorarRodadasActivity.class);
+            actividad.startActivity(intent);
+        } else if (id == R.id.nav_rutas) {
+            Intent intent = new Intent(actividad, ExplorarRutaActivity.class);
+            actividad.startActivity(intent);
+        } else if (id == R.id.nav_asistencia) {
+            Intent intent = new Intent(actividad, AsistenciaRutaActivity.class);
+            actividad.startActivity(intent);
+        }
+        actividad.finish();
+        DrawerLayout drawer = (DrawerLayout) actividad.findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 
     //Autogenerado
