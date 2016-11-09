@@ -29,7 +29,7 @@ public class Utilidades {
     private List<Rodada> rodadas;
 
     public Utilidades() {
-        String loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
+        String loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
         rodadas = new ArrayList<>();
         rodadas.add(new Rodada(1, null, "Rodada entre museos", "Bike House", new Date(), "120", "240", loremIpsum, "1.5 horas", "Museo Nacional", "Museo del Oro"));
         rodadas.add(new Rodada(2, null, "Bici paseo nocturno", "Andres Vergara", new Date(), "230", "450", loremIpsum, "1 horas", "Parque Virrey", "Plaza de Bolivar"));

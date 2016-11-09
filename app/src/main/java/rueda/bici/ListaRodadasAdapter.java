@@ -72,7 +72,7 @@ public class ListaRodadasAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(actividad, DetalleRodadaActivity.class);
-                intent.putExtra("rodadaSeleccionada", temp.getId());
+                intent.putExtra("rodadaSeleccionada", temp);
                 actividad.startActivity(intent);
             }
         });

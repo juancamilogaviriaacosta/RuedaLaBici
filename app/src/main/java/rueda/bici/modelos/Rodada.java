@@ -2,13 +2,14 @@ package rueda.bici.modelos;
 
 import android.widget.ImageView;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by juan on 7/11/16.
  */
 
-public class Rodada {
+public class Rodada implements Serializable{
     private Integer id;
     private ImageView imagen;
     private String nombre;
