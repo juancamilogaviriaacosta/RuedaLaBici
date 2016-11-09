@@ -19,6 +19,7 @@ import java.util.Date;
 import java.util.List;
 
 import rueda.bici.modelos.Rodada;
+import rueda.bici.util.Utilidades;
 
 public class ExplorarRodadasActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -39,10 +40,7 @@ public class ExplorarRodadasActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        List<Rodada> rodadas = new ArrayList<>();
-        for (int i=0; i<6; i++) {
-            rodadas.add(new Rodada(i, "Rodada: "+i, "Lugar: "+i, new Date()));
-        }
+        List<Rodada> rodadas = Utilidades.getInstance().getRodadas();
         ListView listaRodadas = (ListView) findViewById(R.id.listaRodadas);
         ListaRodadasAdapter listaRodadasAdapter = new ListaRodadasAdapter(this, rodadas);
         listaRodadas.setAdapter(listaRodadasAdapter);

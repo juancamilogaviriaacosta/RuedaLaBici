@@ -1,5 +1,7 @@
 package rueda.bici.modelos;
 
+import android.widget.ImageView;
+
 import java.util.Date;
 
 /**
@@ -8,15 +10,29 @@ import java.util.Date;
 
 public class Rodada {
     private Integer id;
+    private ImageView imagen;
     private String nombre;
-    private String lugar;
+    private String organizador;
     private Date fecha;
+    private String asistentes;
+    private String likes;
+    private String descripcion;
+    private String duracion;
+    private String puntoEncuentro;
+    private String destino;
 
-    public Rodada(Integer id, String nombre, String lugar, Date fecha) {
+    public Rodada(Integer id, ImageView imagen, String nombre, String organizador, Date fecha, String asistentes, String likes, String descripcion, String duracion, String puntoEncuentro, String destino) {
         this.id = id;
+        this.imagen = imagen;
         this.nombre = nombre;
-        this.lugar = lugar;
+        this.organizador = organizador;
         this.fecha = fecha;
+        this.asistentes = asistentes;
+        this.likes = likes;
+        this.descripcion = descripcion;
+        this.duracion = duracion;
+        this.puntoEncuentro = puntoEncuentro;
+        this.destino = destino;
     }
 
     public Integer getId() {
@@ -27,6 +43,14 @@ public class Rodada {
         this.id = id;
     }
 
+    public ImageView getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(ImageView imagen) {
+        this.imagen = imagen;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -35,12 +59,12 @@ public class Rodada {
         this.nombre = nombre;
     }
 
-    public String getLugar() {
-        return lugar;
+    public String getOrganizador() {
+        return organizador;
     }
 
-    public void setLugar(String lugar) {
-        this.lugar = lugar;
+    public void setOrganizador(String organizador) {
+        this.organizador = organizador;
     }
 
     public Date getFecha() {
@@ -49,5 +73,53 @@ public class Rodada {
 
     public void setFecha(Date fecha) {
         this.fecha = fecha;
+    }
+
+    public String getAsistentes() {
+        return asistentes;
+    }
+
+    public void setAsistentes(String asistentes) {
+        this.asistentes = asistentes;
+    }
+
+    public String getLikes() {
+        return likes;
+    }
+
+    public void setLikes(String likes) {
+        this.likes = likes;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(String duracion) {
+        this.duracion = duracion;
+    }
+
+    public String getPuntoEncuentro() {
+        return puntoEncuentro;
+    }
+
+    public void setPuntoEncuentro(String puntoEncuentro) {
+        this.puntoEncuentro = puntoEncuentro;
+    }
+
+    public String getDestino() {
+        return destino;
+    }
+
+    public void setDestino(String destino) {
+        this.destino = destino;
     }
 }

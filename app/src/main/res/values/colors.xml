@@ -3,7 +3,7 @@
     <!--<color name="colorPrimary">#49AA4D</color>-->
     <color name="colorPrimary">#FFC107</color>
     <color name="colorPrimaryAlpha">#DDFFC107</color>
-    <color name="colorAccion">#FFEB3B</color>
+    <color name="colorAccion">#FFC107</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorLetra">#FFFFFF</color>

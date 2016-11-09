@@ -19,14 +19,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            app:srcCompat="@drawable/mapa"
-            android:id="@+id/imagenRodada"
-            android:layout_marginTop="50dp"
-            android:layout_gravity="center"/>
-
     </LinearLayout>
 
 

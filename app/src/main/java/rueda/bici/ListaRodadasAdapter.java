@@ -65,7 +65,7 @@ public class ListaRodadasAdapter extends BaseAdapter {
 
         //holder.imagen = "";
         holder.nombre.setText(temp.getNombre());
-        holder.lugar.setText(temp.getLugar());
+        holder.lugar.setText(temp.getPuntoEncuentro());
         holder.fecha.setText(new SimpleDateFormat("yyyy-MM-dd").format(temp.getFecha()));
 
         row.setOnClickListener(new View.OnClickListener() {
