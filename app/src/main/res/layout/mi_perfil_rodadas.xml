@@ -8,14 +8,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#efefef">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackground"
+            android:background="#fff"
             android:clickable="true"
-            android:padding="@dimen/activity_horizontal_margin">
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
 
             <ImageView
                 android:id="@+id/ivContactItem1"
@@ -23,37 +27,56 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="@dimen/activity_horizontal_margin"
-                android:src="@drawable/ic_star_black" />
+                android:src="@drawable/ic_location_on_black" />
 
             <TextView
                 android:id="@+id/tvNumber1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:layout_toRightOf="@id/ivContactItem1"
-                android:text="Andrés Escobar"
+                android:text="RODADA ENTRE MUSEOS"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="#212121" />
 
             <TextView
+                android:id="@+id/locationName1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvNumber1"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:layout_marginTop="8dp"
                 android:layout_toRightOf="@id/ivContactItem1"
-                android:text="Home"
+                android:text="Museo Nacional"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#727272" />
+
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/locationName1"
+                android:text="Noviembre 11, 2016"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="#727272" />
 
         </RelativeLayout>
 
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackground"
+            android:background="#fff"
             android:clickable="true"
-            android:padding="@dimen/activity_horizontal_margin">
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
 
             <ImageView
                 android:id="@+id/ivContactItem2"
@@ -61,98 +84,96 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="@dimen/activity_horizontal_margin"
-                android:src="@drawable/ic_phone_black" />
+                android:src="@drawable/ic_location_on_black" />
 
             <TextView
                 android:id="@+id/tvNumber2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:layout_toRightOf="@id/ivContactItem2"
-                android:text="(321) 654-0987"
+                android:text="CICLORUTA POR LA SEPTIMA"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="#212121" />
 
             <TextView
+                android:id="@+id/locationName2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvNumber2"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@id/ivContactItem2"
-                android:text="Work"
+                android:text="Parque Virrey"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#727272" />
+            <TextView
+                android:id="@+id/date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/locationName2"
+                android:text="Noviembre 11, 2016"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="#727272" />
 
-            <ToggleButton
-                android:id="@+id/chkState2"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:background="@drawable/toggle_selector"
-                android:checked="false"
-                android:padding="6dp"
-                android:textOff=""
-                android:textOn="" />
-
-
         </RelativeLayout>
-
-        <include layout="@layout/item_divider" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackground"
+            android:background="#fff"
             android:clickable="true"
-            android:padding="@dimen/activity_horizontal_margin">
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
 
             <ImageView
                 android:id="@+id/ivContactItem3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:src="@drawable/ic_email_black" />
+                android:layout_alignParentRight="@dimen/activity_horizontal_margin"
+                android:src="@drawable/ic_location_on_black" />
 
             <TextView
                 android:id="@+id/tvNumber3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:layout_toRightOf="@id/ivContactItem3"
-                android:layout_toLeftOf="@+id/chkState3"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:text="andres@prueba.com"
+                android:text="RECORRIDO LUMINOSO"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="#212121" />
 
             <TextView
+                android:id="@+id/locationName3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvNumber3"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@id/ivContactItem3"
-                android:text="Personal"
+                android:text="CC Andino"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="#727272" />
-
-            <ToggleButton
-                android:id="@+id/chkState3"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:background="@drawable/toggle_selector"
-                android:checked="true"
-                android:padding="6dp"
-                android:textOff=""
-                android:textOn="" />
+            <TextView
+                android:id="@+id/date3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/locationName3"
+                android:text="Diciembre 10, 2016"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#727272" />
 
         </RelativeLayout>
 
