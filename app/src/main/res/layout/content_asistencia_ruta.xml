@@ -45,6 +45,7 @@
                 android:layout_below="@+id/linearLayout"
                 android:id="@+id/checkBox1"
                 android:textColor="@color/colorLetra"
+                android:buttonTint="@color/colorLetra"
                 android:checked="true"/>
 
 
@@ -56,6 +57,7 @@
                 android:layout_below="@+id/linearLayout"
                 android:id="@+id/checkBox2"
                 android:textColor="@color/colorLetra"
+                android:buttonTint="@color/colorLetra"
                 android:checked="true"/>
 
         </LinearLayout>
@@ -79,6 +81,7 @@
                 android:layout_below="@+id/linearLayout"
                 android:id="@+id/checkBox3"
                 android:textColor="@color/colorLetra"
+                android:buttonTint="@color/colorLetra"
                 android:checked="true"/>
 
             <CheckBox
@@ -89,6 +92,7 @@
                 android:layout_below="@+id/linearLayout"
                 android:id="@+id/checkBox4"
                 android:textColor="@color/colorLetra"
+                android:buttonTint="@color/colorLetra"
                 android:checked="true"/>
 
         </LinearLayout>
