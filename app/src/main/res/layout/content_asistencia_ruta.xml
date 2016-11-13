@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,4 +12,89 @@
     tools:context="rueda.bici.AsistenciaRutaActivity"
     tools:showIn="@layout/app_bar_asistencia_ruta">
 
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/mapa"
+            android:id="@+id/imageView3" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="fill_parent"
+            android:layout_height="35dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/colorPrimary">
+
+            <CheckBox
+                android:text="Taller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:id="@+id/checkBox1"
+                android:textColor="@color/colorLetra"
+                android:checked="true"
+                android:textAlignment="center"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="35dp"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:text="Policía"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:id="@+id/checkBox2"
+                android:textColor="@color/colorLetra"
+                android:checked="true"/>
+
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="fill_parent"
+            android:layout_height="15dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/colorPrimary">
+
+            <CheckBox
+                android:text="Bici Amigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:id="@+id/checkBox3"
+                android:textColor="@color/colorLetra"
+                android:checked="true"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="35dp"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:text="Alertas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:id="@+id/checkBox4"
+                android:textColor="@color/colorLetra"
+                android:checked="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 </RelativeLayout>
