@@ -12,7 +12,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 
+import java.util.List;
+
+import rueda.bici.modelos.Rodada;
+import rueda.bici.modelos.Ruta;
 import rueda.bici.util.Utilidades;
 
 public class ExplorarRutaActivity extends AppCompatActivity
@@ -33,6 +38,11 @@ public class ExplorarRutaActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        List<Ruta> rutas = Utilidades.getInstance().getRutas();
+        ListView listaRutas = (ListView) findViewById(R.id.listaRutas);
+        ListaRutasAdapter listaRutasAdapter = new ListaRutasAdapter(this, rutas);
+        listaRutas.setAdapter(listaRutasAdapter);
     }
 
     @Override

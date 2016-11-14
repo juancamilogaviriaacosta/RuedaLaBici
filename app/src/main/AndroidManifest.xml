@@ -24,7 +24,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MiPerfilActivity"
-            android:label= "@string/title_activity_mi_perfil"
+            android:label="@string/title_activity_mi_perfil"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ExplorarRutaActivity"
@@ -37,6 +37,10 @@
         <activity
             android:name=".DetalleRodadaActivity"
             android:label="@string/title_activity_detalle_rodada"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetalleRutaActivity"
+            android:label="@string/title_activity_detalle_ruta"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

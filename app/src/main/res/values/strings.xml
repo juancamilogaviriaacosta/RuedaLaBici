@@ -10,4 +10,5 @@
     <string name="title_activity_explorar_ruta">ExplorarRutaActivity</string>
     <string name="title_activity_asistencia_ruta">AsistenciaRutaActivity</string>
     <string name="title_activity_detalle_rodada">DetalleRodadaActivity</string>
+    <string name="title_activity_detalle_ruta">DetalleRutaActivity</string>
 </resources>

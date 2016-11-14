@@ -27,9 +27,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginTop="80dp"
-                app:srcCompat="@drawable/logo"
-                android:id="@+id/imageView2"
-                android:background="@color/colorPrimary"/>
+                app:srcCompat="@drawable/tyrgf01"
+                android:id="@+id/imageView2"/>
 
         </LinearLayout>
 
@@ -44,7 +43,7 @@
                 android:layout_weight="1"
                 android:text="Mi perfil"
                 android:id="@+id/boton_mi_perfil"
-                android:drawableTop="@drawable/ic_menu_camera"
+                android:drawableTop="@drawable/tyrgf02"
                 android:textColor="@color/colorLetra"
                 android:background="@color/colorAccion"
                 android:paddingTop="10sp"
@@ -58,7 +57,7 @@
                 android:layout_weight="1"
                 android:text="Explorar rodadas"
                 android:id="@+id/boton_explorar_rodadas"
-                android:drawableTop="@drawable/ic_menu_slideshow"
+                android:drawableTop="@drawable/tyrgf03"
                 android:textColor="@color/colorLetra"
                 android:background="@color/colorAccion"
                 android:paddingTop="10sp"
@@ -79,7 +78,7 @@
                 android:layout_weight="1"
                 android:text="Explorar rutas"
                 android:id="@+id/boton_explorar_rutas"
-                android:drawableTop="@drawable/ic_menu_manage"
+                android:drawableTop="@drawable/tyrgf04"
                 android:textColor="@color/colorLetra"
                 android:background="@color/colorAccion"
                 android:paddingTop="10sp"
@@ -93,7 +92,7 @@
                 android:layout_weight="1"
                 android:text="Asistencia en ruta"
                 android:id="@+id/boton_asistencia_ruta"
-                android:drawableTop="@drawable/ic_menu_share"
+                android:drawableTop="@drawable/tyrgf05"
                 android:textColor="@color/colorLetra"
                 android:background="@color/colorAccion"
                 android:paddingTop="10sp"
