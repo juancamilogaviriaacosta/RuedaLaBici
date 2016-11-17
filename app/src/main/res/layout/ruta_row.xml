@@ -15,38 +15,67 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            app:srcCompat="@android:drawable/star_big_on"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/rodadamuseos"
             android:id="@+id/imagenRuta" />
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp">
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp">
 
-            <TextView
-                android:text="TextView"
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/nombreRuta"
-                android:textColor="@color/colorLetra"/>
+                android:clickable="true"
+                android:padding="@dimen/activity_horizontal_margin">
 
-            <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/lugarRuta"
-                android:textColor="@color/colorLetra"/>
+                <ImageView
+                    android:id="@+id/ivContactItem2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/ic_location_on_black" />
 
-            <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/fechaRuta"
-                android:textColor="@color/colorLetra"/>
+                <TextView
+                    android:id="@+id/nombreRuta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/ivContactItem2"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorLetra" />
+
+                <TextView
+                    android:id="@+id/lugarRuta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNumber2"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/ivContactItem2"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorLetra" />
+                <TextView
+                    android:id="@+id/fechaRuta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@id/ivContactItem2"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorLetra" />
+
+            </RelativeLayout>
 
         </LinearLayout>
     </LinearLayout>

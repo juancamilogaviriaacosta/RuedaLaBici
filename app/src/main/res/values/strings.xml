@@ -1,14 +1,14 @@
 <resources>
-    <string name="app_name">RuedaBici</string>
+    <string name="app_name">BICI RUTEANDO</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string name="title_activity_explorar_rodadas">ExplorarRodadasActivity</string>
+    <string name="title_activity_explorar_rodadas">Explorar Rodadas</string>
     <string name="title_activity_mi_perfil">Mi Perfil</string>
-    <string name="title_activity_explorar_ruta">ExplorarRutaActivity</string>
-    <string name="title_activity_asistencia_ruta">AsistenciaRutaActivity</string>
-    <string name="title_activity_detalle_rodada">DetalleRodadaActivity</string>
-    <string name="title_activity_detalle_ruta">DetalleRutaActivity</string>
+    <string name="title_activity_explorar_ruta">Explorar Ruta</string>
+    <string name="title_activity_asistencia_ruta">Asistencia En Ruta</string>
+    <string name="title_activity_detalle_rodada">Detalle Rodada</string>
+    <string name="title_activity_detalle_ruta">Detalle Ruta</string>
 </resources>
